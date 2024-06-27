@@ -3,7 +3,7 @@
 ## Bug reports
 
 - Before reporting a bug, have a look at the [issue
-  list](https://github.com/jstemmer/go-junit-report/issues) to see if an issue
+  list](https://github.com/joschi/go-junit-report/issues) to see if an issue
   already exists for your problem.
 - Include as much information as you can in the bug report, e.g.: the versions
   of go-junit-report and the Go compiler, how go-junit-report was called, what

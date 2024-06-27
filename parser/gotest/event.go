@@ -3,7 +3,7 @@ package gotest
 import (
 	"time"
 
-	"github.com/jstemmer/go-junit-report/v2/parser/gotest/internal/reader"
+	"github.com/joschi/go-junit-report/v2/parser/gotest/internal/reader"
 )
 
 // Event is a single event in a Go test or benchmark.

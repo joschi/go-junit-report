@@ -10,11 +10,11 @@
 WARNING: DATA RACE
 Write at 0x00c000138168 by goroutine 8:
   package/race.TestRace.func1()
-      /src/github.com/jstemmer/go-junit-report/testdata/src/race/race_test.go:9 +0x39
+      /src/github.com/joschi/go-junit-report/testdata/src/race/race_test.go:9 +0x39
 
 Previous write at 0x00c000138168 by goroutine 7:
   package/race.TestRace()
-      /src/github.com/jstemmer/go-junit-report/testdata/src/race/race_test.go:12 +0x105
+      /src/github.com/joschi/go-junit-report/testdata/src/race/race_test.go:12 +0x105
   testing.tRunner()
       /go-src/go1.18/src/testing/testing.go:1439 +0x213
   testing.(*T).Run.func1()
@@ -22,7 +22,7 @@ Previous write at 0x00c000138168 by goroutine 7:
 
 Goroutine 8 (running) created at:
   package/race.TestRace()
-      /src/github.com/jstemmer/go-junit-report/testdata/src/race/race_test.go:8 +0xfb
+      /src/github.com/joschi/go-junit-report/testdata/src/race/race_test.go:8 +0xfb
   testing.tRunner()
       /go-src/go1.18/src/testing/testing.go:1439 +0x213
   testing.(*T).Run.func1()

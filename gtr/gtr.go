@@ -73,7 +73,7 @@ type Package struct {
 // property with the given key already exists, its old value will be
 // overwritten with the given value.
 func (p *Package) SetProperty(key, value string) {
-	// TODO(jstemmer): Delete this method in the next major release.
+	// TODO(joschi): Delete this method in the next major release.
 	// Delete all the properties whose name is the specified key,
 	// then add the specified key-value property.
 	i := 0

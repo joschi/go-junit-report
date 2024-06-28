@@ -3,6 +3,16 @@
 - [GitHub releases](https://github.com/joschi/go-junit-report/releases)
 - [Old GitHub releases](https://github.com/jstemmer/go-junit-report/releases)
 
+## [2.2.0](https://github.com/joschi/go-junit-report/compare/v2.1.0...v2.2.0) (2024-06-28)
+
+
+### Features
+
+* add AssumeNoBuildOutput option to ignore build output ([#11](https://github.com/joschi/go-junit-report/issues/11)) ([940046d](https://github.com/joschi/go-junit-report/commit/940046d07e4639c3ef97a1b2d2b02b4c4ce8e4ac))
+* populate skipped message with last line of test output ([#13](https://github.com/joschi/go-junit-report/issues/13)) ([3f30451](https://github.com/joschi/go-junit-report/commit/3f30451b10e74b043687492477d3c665045ff39e))
+* remove ANSI escape sequences from output ([#5](https://github.com/joschi/go-junit-report/issues/5)) ([ad9f925](https://github.com/joschi/go-junit-report/commit/ad9f925efa87f146a9998a4a226dc80bb0452018))
+* support new coverage format of Go 1.20 ([#12](https://github.com/joschi/go-junit-report/issues/12)) ([5a66382](https://github.com/joschi/go-junit-report/commit/5a66382305fe6bb671363955b634e70b4800923c))
+
 ## [2.1.0](https://github.com/jstemmer/go-junit-report/releases/tag/v2.1.0) (2023-10-19)
 
 - Fix jstemmer/go-junit-report#147: Make timestamps in generated report more accurate.

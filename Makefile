@@ -6,7 +6,7 @@ test:
 	go test ./...
 
 build/go-junit-report build/go-junit-report.exe: clean
-	go build --ldflags "-s -X main.Version=$(VERSION) -X main.Revision=$(REVISION) -X main.BuildTime=$(TIMESTAMP)" -o $@
+	go build --ldflags "-s -X main.Version=$(VERSION) -X main.Revision=$(REVISION) -X main.BuildTime=$(TIMESTAMP)" -o $@ ./cmd/go-junit-report
 
 build/go-junit-report-$(VERSION)-$(GOOS)-$(GOARCH).tar.gz: build/go-junit-report
 	tar czf $@ -C build go-junit-report

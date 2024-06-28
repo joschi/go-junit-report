@@ -20,13 +20,14 @@ type parser interface {
 
 // Config contains the go-junit-report command configuration.
 type Config struct {
-	Parser        string
-	Hostname      string
-	PackageName   string
-	SkipXMLHeader bool
-	SubtestMode   gotest.SubtestMode
-	Properties    map[string]string
-	TimestampFunc func() time.Time
+	Parser              string
+	Hostname            string
+	PackageName         string
+	SkipXMLHeader       bool
+	SubtestMode         gotest.SubtestMode
+	Properties          map[string]string
+	TimestampFunc       func() time.Time
+	AssumeNoBuildOutput bool
 
 	// For debugging
 	PrintEvents bool
@@ -86,5 +87,6 @@ func (c Config) gotestOptions() []gotest.Option {
 		gotest.PackageName(c.PackageName),
 		gotest.SetSubtestMode(c.SubtestMode),
 		gotest.TimestampFunc(c.TimestampFunc),
+		gotest.AssumeNoBuildOutput(c.AssumeNoBuildOutput),
 	}
 }

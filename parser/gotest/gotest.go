@@ -113,9 +113,9 @@ func SetSubtestMode(mode SubtestMode) Option {
 // option is most useful when running tests that are known to build correctly,
 // or have already been built (e.g. via go test -c, or an alternative build
 // system).
-func AssumeNoBuildOutput() Option {
+func AssumeNoBuildOutput(assumeNoBuildOutput bool) Option {
 	return func(p *Parser) {
-		p.assumeNoBuildOutput = true
+		p.assumeNoBuildOutput = assumeNoBuildOutput
 	}
 }
 

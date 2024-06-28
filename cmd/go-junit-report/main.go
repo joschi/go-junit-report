@@ -16,16 +16,16 @@ import (
 
 // Current release information printed by the -version flag.
 var (
-	Version   = "v2.2.0-dev"
-	Revision  = "HEAD"
-	BuildTime string
+	version = "v2.2.0-dev"
+	commit  = "HEAD"
+	date    string
 )
 
 var (
 	noXMLHeader         = flag.Bool("no-xml-header", false, "do not print xml header")
 	packageName         = flag.String("package-name", "", "specify a default package `name` to use if output does not contain a package name")
 	setExitCode         = flag.Bool("set-exit-code", false, "set exit code to 1 if tests failed")
-	version             = flag.Bool("version", false, "print version")
+	printVersion        = flag.Bool("version", false, "print version")
 	input               = flag.String("in", "", "read go test log from `file`")
 	output              = flag.String("out", "", "write XML report to `file`")
 	iocopy              = flag.Bool("iocopy", false, "copy input to stdout; can only be used in conjunction with -out")
@@ -49,8 +49,8 @@ func main() {
 		exitf("you must specify an output file with -out when using -iocopy")
 	}
 
-	if *version {
-		fmt.Printf("go-junit-report %s %s (%s)\n", Version, BuildTime, Revision)
+	if *printVersion {
+		fmt.Printf("go-junit-report %s %s (%s)\n", version, date, commit)
 		return
 	}
 

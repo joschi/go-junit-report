@@ -110,4 +110,5 @@ See [CONTRIBUTING.md].
 [github.com/joschi/go-junit-report/v2/junit]: https://pkg.go.dev/github.com/joschi/go-junit-report/v2/junit
 [Releases]: https://github.com/joschi/go-junit-report/releases
 [testing]: https://pkg.go.dev/testing
-[CONTRIBUTING.md]: https://github.com/joschi/go-junit-report/blob/master/CONTRIBUTING.md
+[CONTRIBUTING.md]: ./CONTRIBUTING.md
+[CHANGELOG.md]: ./CHANGELOG.md
